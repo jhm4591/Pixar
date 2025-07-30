@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemental - 뉴스 & 소식 | PIXAR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="subpage-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="image/pixar_logo.png" alt="PIXAR">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="movie-details.html">영화</a></li>
+                <li><a href="characters.html">캐릭터</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="news.html" class="active">뉴스</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="news-hero">
+        <div class="hero-background">
+            <div class="elemental-particles">
+                <div class="particle fire"></div>
+                <div class="particle water"></div>
+                <div class="particle earth"></div>
+                <div class="particle air"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">뉴스 & 소식</h1>
+            <p class="hero-subtitle">엘리멘탈의 최신 소식과 업데이트를 확인하세요</p>
+        </div>
+    </section>
+
+    <!-- 뉴스 필터 -->
+    <section class="news-filters-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-newspaper"></i>
+                    전체
+                </button>
+                <button class="filter-btn" data-filter="announcement">
+                    <i class="fas fa-bullhorn"></i>
+                    공지사항
+                </button>
+                <button class="filter-btn" data-filter="interview">
+                    <i class="fas fa-microphone"></i>
+                    인터뷰
+                </button>
+                <button class="filter-btn" data-filter="review">
+                    <i class="fas fa-star"></i>
+                    리뷰
+                </button>
+                <button class="filter-btn" data-filter="behind">
+                    <i class="fas fa-camera"></i>
+                    비하인드
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메인 뉴스 섹션 -->
+    <section class="main-news">
+        <div class="container">
+            <div class="news-grid">
+                <!-- 주요 뉴스 -->
+                <article class="news-item featured" data-category="announcement">
+                    <div class="news-image">
+                        <img src="image/million.jpg" alt="Main News">
+                        <div class="news-badge">주요</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">공지사항</span>
+                            <span class="news-date">2024.01.15</span>
+                        </div>
+                        <h2 class="news-title">엘리멘탈, 전 세계 흥행 돌풍! 1억 달러 돌파</h2>
+                        <p class="news-excerpt">
+                            픽사의 최신작 '엘리멘탈'이 전 세계적으로 큰 사랑을 받으며 흥행 기록을 갱신했습니다. 
+                            개봉 첫 주말에만 1억 달러를 돌파하며 애니메이션 영화의 새로운 이정표를 세웠습니다.
+                        </p>
+                        <div class="news-stats">
+                            <span><i class="fas fa-eye"></i> 15,234</span>
+                            <span><i class="fas fa-heart"></i> 892</span>
+                            <span><i class="fas fa-comment"></i> 156</span>
+                        </div>
+                        <a href="#" class="read-more">자세히 보기 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 인터뷰 뉴스 -->
+                <article class="news-item" data-category="interview">
+                    <div class="news-image">
+                        <img src="image/peterson.jpg">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">인터뷰</span>
+                            <span class="news-date">2024.01.12</span>
+                        </div>
+                        <h3 class="news-title">피터 손 감독과의 특별 인터뷰</h3>
+                        <p class="news-excerpt">
+                            엘리멘탈의 감독 피터 손이 영화 제작 과정과 메시지에 대해 이야기합니다. 
+                            4가지 원소를 통해 전하고 싶었던 메시지는 무엇일까요?
+                        </p>
+                        <div class="news-stats">
+                            <span><i class="fas fa-eye"></i> 8,567</span>
+                            <span><i class="fas fa-heart"></i> 445</span>
+                            <span><i class="fas fa-comment"></i> 89</span>
+                        </div>
+                        <a href="#" class="read-more">자세히 보기 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 리뷰 뉴스 -->
+                <article class="news-item" data-category="review">
+                    <div class="news-image">
+                        <img src="image/pyungronga.jpg">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">리뷰</span>
+                            <span class="news-date">2024.01.10</span>
+                        </div>
+                        <h3 class="news-title">영화평론가들이 선정한 2024년 최고의 애니메이션</h3>
+                        <p class="news-excerpt">
+                            전 세계 영화평론가들이 엘리멘탈을 2024년 최고의 애니메이션으로 선정했습니다. 
+                            혁신적인 기술과 감동적인 스토리가 높은 평가를 받았습니다.
+                        </p>
+                        <div class="news-stats">
+                            <span><i class="fas fa-eye"></i> 12,345</span>
+                            <span><i class="fas fa-heart"></i> 678</span>
+                            <span><i class="fas fa-comment"></i> 234</span>
+                        </div>
+                        <a href="#" class="read-more">자세히 보기 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 비하인드 뉴스 -->
+                <article class="news-item" data-category="behind">
+                    <div class="news-image">
+                        <img src="image/behind.jpg">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">비하인드</span>
+                            <span class="news-date">2024.01.08</span>
+                        </div>
+                        <h3 class="news-title">엘리멘탈 제작 비하인드 스토리</h3>
+                        <p class="news-excerpt">
+                            7년간의 제작 과정에서 있었던 흥미로운 에피소드들을 공개합니다. 
+                            각 원소의 물리적 특성을 구현하기 위해 노력한 기술팀의 이야기입니다.
+                        </p>
+                        <div class="news-stats">
+                            <span><i class="fas fa-eye"></i> 9,876</span>
+                            <span><i class="fas fa-heart"></i> 567</span>
+                            <span><i class="fas fa-comment"></i> 123</span>
+                        </div>
+                        <a href="#" class="read-more">자세히 보기 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 공지사항 -->
+                <article class="news-item" data-category="announcement">
+                    <div class="news-image">
+                        <img src="image/ost.jpg">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">공지사항</span>
+                            <span class="news-date">2024.01.05</span>
+                        </div>
+                        <h3 class="news-title">엘리멘탈 OST 앨범 발매 안내</h3>
+                        <p class="news-excerpt">
+                            영화의 아름다운 음악을 담은 엘리멘탈 OST 앨범이 발매됩니다. 
+                            토마스 뉴먼이 작곡한 감동적인 음악들을 만나보세요.
+                        </p>
+                        <div class="news-stats">
+                            <span><i class="fas fa-eye"></i> 6,789</span>
+                            <span><i class="fas fa-heart"></i> 345</span>
+                            <span><i class="fas fa-comment"></i> 67</span>
+                        </div>
+                        <a href="#" class="read-more">자세히 보기 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- 인터뷰 -->
+                <article class="news-item" data-category="interview">
+                    <div class="news-image">
+                        <img src="image/sungwoo.jpg">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">인터뷰</span>
+                            <span class="news-date">2024.01.03</span>
+                        </div>
+                        <h3 class="news-title">성우 인터뷰: 엠버와 웨이드의 목소리</h3>
+                        <p class="news-excerpt">
+                            엠버와 웨이드 역을 맡은 성우들이 더빙 과정에서 있었던 재미있는 이야기들을 
+                            공개합니다. 캐릭터에 생명을 불어넣은 그들의 열정을 확인해보세요.
+                        </p>
+                        <div class="news-stats">
+                            <span><i class="fas fa-eye"></i> 7,234</span>
+                            <span><i class="fas fa-heart"></i> 456</span>
+                            <span><i class="fas fa-comment"></i> 89</span>
+                        </div>
+                        <a href="#" class="read-more">자세히 보기 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 뉴스 사이드바 -->
+    <aside class="news-sidebar">
+        <div class="container">
+            <div class="sidebar-content">
+                <!-- 인기 뉴스 -->
+                <div class="sidebar-section">
+                    <h3>인기 뉴스</h3>
+                    <div class="popular-news">
+                        <div class="popular-item">
+                            <span class="popular-rank">1</span>
+                            <div class="popular-content">
+                                <h4>엘리멘탈, 아카데미상 후보 선정</h4>
+                                <span class="popular-date">2024.01.14</span>
+                            </div>
+                        </div>
+                        <div class="popular-item">
+                            <span class="popular-rank">2</span>
+                            <div class="popular-content">
+                                <h4>전 세계 팬들의 반응</h4>
+                                <span class="popular-date">2024.01.13</span>
+                            </div>
+                        </div>
+                        <div class="popular-item">
+                            <span class="popular-rank">3</span>
+                            <div class="popular-content">
+                                <h4>엘리멘탈 캐릭터 인형 출시</h4>
+                                <span class="popular-date">2024.01.12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 뉴스레터 구독 -->
+                <div class="sidebar-section">
+                    <h3>뉴스레터 구독</h3>
+                    <p>엘리멘탈의 최신 소식을 이메일로 받아보세요!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="이메일 주소를 입력하세요" required>
+                        <button type="submit">구독하기</button>
+                    </form>
+                </div>
+
+                <!-- 소셜 미디어 -->
+                <div class="sidebar-section">
+                    <h3>소셜 미디어</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link youtube">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- 페이지네이션 -->
+    <section class="pagination-section">
+        <div class="container">
+            <div class="pagination">
+                <button class="page-btn prev-btn" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                    이전
+                </button>
+                <div class="page-numbers">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-btn">10</button>
+                </div>
+                <button class="page-btn next-btn">
+                    다음
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PIXAR</h3>
+                    <p>창의성과 혁신의 세계로 여러분을 초대합니다.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>링크</h3>
+                    <ul>
+                        <li><a href="#">공식 사이트</a></li>
+                        <li><a href="#">소셜 미디어</a></li>
+                        <li><a href="#">뉴스</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>연락처</h3>
+                    <p>Email: info@pixar.com</p>
+                    <p>Phone: +1-800-PIXAR</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PIXAR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="subpage-script.js"></script>
+</body>
+</html> 

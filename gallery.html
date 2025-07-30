@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemental - 갤러리 | PIXAR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="subpage-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="image/pixar_logo.png" alt="PIXAR">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="movie-details.html">영화</a></li>
+                <li><a href="characters.html">캐릭터</a></li>
+                <li><a href="gallery.html" class="active">갤러리</a></li>
+                <li><a href="news.html">뉴스</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="gallery-hero">
+        <div class="hero-background">
+            <div class="elemental-particles">
+                <div class="particle fire"></div>
+                <div class="particle water"></div>
+                <div class="particle earth"></div>
+                <div class="particle air"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">갤러리</h1>
+            <p class="hero-subtitle">엘리멘탈의 아름다운 순간들을 담은 이미지들을 감상하세요</p>
+        </div>
+    </section>
+
+    <!-- 갤러리 필터 -->
+    <section class="gallery-filters-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i>
+                    전체
+                </button>
+                <button class="filter-btn" data-filter="scenes">
+                    <i class="fas fa-film"></i>
+                    주요 장면
+                </button>
+                <button class="filter-btn" data-filter="characters">
+                    <i class="fas fa-users"></i>
+                    캐릭터
+                </button>
+                <button class="filter-btn" data-filter="concept">
+                    <i class="fas fa-palette"></i>
+                    컨셉 아트
+                </button>
+                <button class="filter-btn" data-filter="posters">
+                    <i class="fas fa-image"></i>
+                    포스터
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메인 갤러리 -->
+    <section class="main-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- 주요 장면들 -->
+                <div class="gallery-item large" data-category="scenes">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MDhfMjcg%2FMDAxNjg2MjM1NDYyNzEz.SUzi6g5lW3KqInB9q0e3ixEMhMyg45lR7EAJ2HLFU_gg.CXej35AcB0ldRaDXNB9XWm6kPzRsl6EztjtJpXroowMg.JPEG.b117711%2F%25BF%25B5%25C8%25AD%25BF%25A4%25B8%25AE%25B8%25E0%25C5%25BB_%25281%2529.jpeg&type=sc960_832" alt="Main Scene 1">
+                    <div class="gallery-overlay">
+                        <h3>엘리멘트 시티 전경</h3>
+                        <p>불, 물, 흙, 공기가 공존하는 마법 같은 도시</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item ember" data-category="characters">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA3MjhfMjQ2%2FMDAxNjkwNTA5OTM1MTQ0.-R3VdAk0majavu3hyfZd11v_h-Zc4hwJecW-8P3ewAUg.8GyM873-0nQ2Hj3f9EqJ6tgNqWFWfQonk_BgPCs357Mg.JPEG.morphun-korea%2Fa3er21asd.JPG&type=sc960_832" alt="Ember Scene">
+                    <div class="gallery-overlay">
+                        <h3>엠버의 작업실</h3>
+                        <p>불의 대장장이 일을 배우는 엠버</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="characters">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA5MTBfMTMz%2FMDAxNjk0MzM1MjkzODk3.5vO2FzAAybia27-gXajV6Ek1xvP9hkpQyzGGtfX63qAg.PRZ1YzujOE14bVoXOtHEtRCkVtqJ3sFBipwtZ9NU3bMg.PNG.ehdduq2623%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2023-09-10_173338.png&type=sc960_832" alt="Wade Scene">
+                    <div class="gallery-overlay">
+                        <h3>웨이드의 수로</h3>
+                        <p>도시의 물 관리 업무를 담당하는 웨이드</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="scenes">
+                    <img src="https://i.ytimg.com/vi/si5vRgreUq0/maxresdefault.jpg" alt="Earth Scene">
+                    <div class="gallery-overlay">
+                        <h3>흙의 정원</h3>
+                        <p>평화롭고 안정적인 흙의 세계</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="scenes">
+                    <img src="https://ilovecharacter.com/news/data/20230608/p1065595384895609_680_thum.jpg" alt="Air Scene">
+                    <div class="gallery-overlay">
+                        <h3>공기의 하늘</h3>
+                        <p>자유롭게 떠다니는 공기의 세계</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item large" data-category="concept">
+                    <img src="https://cdn.socialimpactnews.net/news/photo/202307/964_1515_126.jpg" alt="Concept Art 1">
+                    <div class="gallery-overlay">
+                        <h3>엘리멘트 시티 컨셉 아트</h3>
+                        <p>초기 디자인 단계의 도시 구상도</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item poster" data-category="posters">
+                    <img src="https://ojsfile.ohmynews.com/STD_IMG_FILE/2023/0621/IE003167549_STD.jpg" alt="Movie Poster 1">
+                    <div class="gallery-overlay">
+                        <h3>메인 포스터</h3>
+                        <p>엘리멘탈 공식 메인 포스터</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="scenes">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA3MTFfMjE0%2FMDAxNjg5MDQzODQ3MzM1.Jllnr1IYH5uAMOOlon-sj9YqqbjrGSDrAQJ21-Y6U2Ig.dU6ZMJvCiluBL07R8dsrx5-qMhkUu2gDgEoJjq14K_Ig.JPEG.kyty77%2Felemental-movie.jpg&type=sc960_832" alt="Fire Water Scene">
+                    <div class="gallery-overlay">
+                        <h3>불과 물의 만남</h3>
+                        <p>엠버와 웨이드의 첫 만남</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="concept">
+                    <img src="image/design.png" alt="Character Design">
+                    <div class="gallery-overlay">
+                        <h3>캐릭터 디자인</h3>
+                        <p>엠버와 웨이드의 초기 디자인</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="scenes">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MThfODUg%2FMDAxNjg3MDM4MjYwNDY0.ukbX2xwkkSU6vHq8OCqmNvLKNNplXJHRLSV34TyJilgg.5dWkDftS1sWqMd33Hu2zWx8y6NpO_f4QkRaqwxBBkfIg.PNG.martin7jhon%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2023-06-18_064413.png&type=sc960_832" alt="Adventure Scene">
+                    <div class="gallery-overlay">
+                        <h3>모험의 시작</h3>
+                        <p>함께 떠나는 놀라운 모험</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="posters">
+                    <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fimg.extmovie.com%2Ffiles%2Fattach%2Fimages%2F135%2F999%2F147%2F091%2F4fd57205eae0dec03265738e33346ff1.jpg&type=sc960_832" alt="Movie Poster 2">
+                    <div class="gallery-overlay">
+                        <h3>캐릭터 포스터</h3>
+                        <p>엠버와 웨이드 캐릭터 포스터</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="concept">
+                    <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1715898558281-53Z36QN98RQO1IGHV1O5/048a_9781797218519.jpg?format=1500w" alt="World Design">
+                    <div class="gallery-overlay">
+                        <h3>세계관 디자인</h3>
+                        <p>4가지 원소의 세계 구상</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item large" data-category="scenes">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA5MjhfNjIg%2FMDAxNjk1ODk5MDQ3NDgy.cpb8SlPJqM6Pthw9BDJ5ploCbN7y2fOs_NQn3K7kbuIg.7a1cbJGac9WG_hx2zcnlv1keWOrVm4cwhZjamjJNmkAg.PNG.dksgpgus1234%2FDisney%252B___%25BA%25F1%25B5%25F0%25BF%25C0_%25C7%25C3%25B7%25B9%25C0%25CC%25BE%25EE_-_Chrome_2023-09-18_%25BF%25C0%25C8%25C4_10_27_25.png&type=sc960_832" alt="Final Scene">
+                    <div class="gallery-overlay">
+                        <h3>감동의 마무리</h3>
+                        <p>모든 원소들이 하나가 되는 순간</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 이미지 카운터 -->
+    <section class="image-counter">
+        <div class="container">
+            <div class="counter-info">
+                <span class="current-count">1</span>
+                <span class="total-count">/ 12</span>
+                <span class="counter-text">이미지</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 다운로드 섹션 -->
+    <section class="download-section">
+        <div class="container">
+            <h2>이미지 다운로드</h2>
+            <p>엘리멘탈의 아름다운 이미지들을 다운로드하여 사용하세요</p>
+            <div class="download-options">
+                <button class="download-btn">
+                    <i class="fas fa-download"></i>
+                    전체 이미지 다운로드
+                </button>
+                <button class="download-btn">
+                    <i class="fas fa-mobile-alt"></i>
+                    모바일 배경화면
+                </button>
+                <button class="download-btn">
+                    <i class="fas fa-desktop"></i>
+                    데스크톱 배경화면
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 관련 갤러리 -->
+    <section class="related-galleries">
+        <div class="container">
+            <h2>관련 갤러리</h2>
+            <div class="related-grid">
+                <div class="related-item">
+                    <img src="https://via.placeholder.com/300x200/FF6B35/FFFFFF?text=Behind+Scenes" alt="Behind Scenes">
+                    <h3>메이킹 갤러리</h3>
+                    <p>영화 제작 과정의 흥미로운 순간들</p>
+                </div>
+                <div class="related-item">
+                    <img src="https://via.placeholder.com/300x200/4A90E2/FFFFFF?text=Character+Gallery" alt="Character Gallery">
+                    <h3>캐릭터 갤러리</h3>
+                    <p>각 캐릭터들의 다양한 모습</p>
+                </div>
+                <div class="related-item">
+                    <img src="https://via.placeholder.com/300x200/8B4513/FFFFFF?text=World+Gallery" alt="World Gallery">
+                    <h3>세계관 갤러리</h3>
+                    <p>엘리멘트 시티의 아름다운 풍경</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PIXAR</h3>
+                    <p>창의성과 혁신의 세계로 여러분을 초대합니다.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>링크</h3>
+                    <ul>
+                        <li><a href="#">공식 사이트</a></li>
+                        <li><a href="#">소셜 미디어</a></li>
+                        <li><a href="#">뉴스</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>연락처</h3>
+                    <p>Email: info@pixar.com</p>
+                    <p>Phone: +1-800-PIXAR</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PIXAR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 라이트박스 모달 -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+            </div>
+            <div class="lightbox-nav">
+                <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="subpage-script.js"></script>
+</body>
+</html> 

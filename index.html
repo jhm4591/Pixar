@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXAR - Elemental</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="image/pixar_logo.png" alt="PIXAR">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">홈</a></li>
+                <li><a href="movie-details.html">영화</a></li>
+                <li><a href="characters.html">캐릭터</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="news.html">뉴스</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="elemental-particles">
+                <video autoplay loop playsinline>
+                    <source src="image/bg_video.mp4" type="video/mp4">
+                </video>
+                <div class="particle fire"></div>
+                <div class="particle water"></div>
+                <div class="particle earth"></div>
+                <div class="particle air"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-elemental"><img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/07dd373e-649a-46b0-9b17-930bdefc1157/4.png?format=2500w" alt=""></span>
+                <!-- <span class="title-subtitle">엘리멘탈</span> -->
+            </h1>
+            <p class="hero-description">
+                <!-- <div class="description-impact">
+                    <span class="description-impact-fire">불&nbsp;</span> 
+                    <span class="description-impact-water">물&nbsp;</span>
+                    <span class="description-impact-hhlh">흙&nbsp;</span> 
+                    <span class="description-impact-gong">공기</span>
+                </div> -->
+                <!-- <p>A magical story that unfolds in four worlds</p> -->
+            </p>
+            <div class="hero-buttons">
+                <a href="movie-details.html" class="btn-primary">예고편 보기</a>
+                <a href="movie-details.html" class="btn-secondary">티켓 예매</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 영화 소개 섹션 -->
+    <section id="movies" class="movies-section">
+        <div class="container">
+            <h2 class="section-title">엘리멘탈의 세계</h2>
+            <div class="movie-grid">
+                <div class="movie-card fire-card">
+                    <div class="card-image">
+                        <img src="https://images.hdqwalls.com/download/2023-elemental-ember-rs-1400x1050.jpg" alt="Fire World">
+                    </div>
+                    <div class="card-content">
+                        <h3>불의 세계</h3>
+                        <p>열정과 에너지가 넘치는 불의 도시에서 펼쳐지는 이야기</p>
+                        <a href="characters.html" class="card-link">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="movie-card water-card">
+                    <div class="card-image">
+                        <img src="https://images.hdqwalls.com/download/2023-elemental-wade-rc-1400x1050.jpg" alt="Water World">
+                    </div>
+                    <div class="card-content">
+                        <h3>물의 세계</h3>
+                        <p>유연함과 지혜가 가득한 물의 도시의 비밀</p>
+                        <a href="characters.html" class="card-link">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="movie-card earth-card">
+                    <div class="card-image">
+                        <img src="image/clod1.png" alt="Earth World">
+                    </div>
+                    <div class="card-content">
+                        <h3>흙의 세계</h3>
+                        <p>안정과 성장의 흙의 도시의 이야기</p>
+                        <a href="gallery.html" class="card-link">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="movie-card air-card">
+                    <div class="card-image">
+                        <img src="image/gale.png" alt="Air World">
+                    </div>
+                    <div class="card-content">
+                        <h3>공기의 세계</h3>
+                        <p>자유와 변화의 공기의 도시의 모험</p>
+                        <a href="gallery.html" class="card-link">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 캐릭터 섹션 -->
+    <section id="characters" class="characters-section">
+        <div class="container">
+            <h2 class="section-title">주요 캐릭터</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="https://media.tenor.com/E87QO8iknJIAAAAi/here-it-is-ember.gif" alt="Fire Character">
+                    </div>
+                    <div class="character-info">
+                        <h3>엠버 (Ember)</h3>
+                        <p>열정적인 불의 소녀</p>
+                        <a href="characters.html" class="character-link">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="https://media.tenor.com/gRmq-LKQT-cAAAAi/waving-wade.gif" alt="Water Character">
+                    </div>
+                    <div class="character-info-wade">
+                        <h3>웨이드 (Wade)</h3>
+                        <p>유연한 물의 소년</p>
+                        <a href="characters.html" class="character-link">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 갤러리 섹션 -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">갤러리</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MDhfMjcg%2FMDAxNjg2MjM1NDYyNzEz.SUzi6g5lW3KqInB9q0e3ixEMhMyg45lR7EAJ2HLFU_gg.CXej35AcB0ldRaDXNB9XWm6kPzRsl6EztjtJpXroowMg.JPEG.b117711%2F%25BF%25B5%25C8%25AD%25BF%25A4%25B8%25AE%25B8%25E0%25C5%25BB_%25281%2529.jpeg&type=sc960_832" alt="Scene 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA3MjhfMjQ2%2FMDAxNjkwNTA5OTM1MTQ0.-R3VdAk0majavu3hyfZd11v_h-Zc4hwJecW-8P3ewAUg.8GyM873-0nQ2Hj3f9EqJ6tgNqWFWfQonk_BgPCs357Mg.JPEG.morphun-korea%2Fa3er21asd.JPG&type=sc960_832" alt="Scene 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA5MTBfMTMz%2FMDAxNjk0MzM1MjkzODk3.5vO2FzAAybia27-gXajV6Ek1xvP9hkpQyzGGtfX63qAg.PRZ1YzujOE14bVoXOtHEtRCkVtqJ3sFBipwtZ9NU3bMg.PNG.ehdduq2623%2F%25BD%25BA%25C5%25A9%25B8%25B0%25BC%25A6_2023-09-10_173338.png&type=sc960_832" alt="Scene 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://ilovecharacter.com/news/data/20230608/p1065595384895609_680_thum.jpg" alt="Scene 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.socialimpactnews.net/news/photo/202307/964_1515_126.jpg" alt="Scene 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://ojsfile.ohmynews.com/STD_IMG_FILE/2023/0621/IE003167549_STD.jpg" alt="Scene 6">
+                </div>
+            </div>
+            <div class="gallery-more">
+                <a href="gallery.html" class="btn-primary">MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 비디오 섹션 -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">예고편</h2>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <iframe width="100%" height="400"
+                        src="https://www.youtube.com/embed/BOqFRHCrN-k"
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    <!-- <i class="fas fa-play-circle"></i> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 최신 뉴스 섹션 -->
+    <section class="news-preview-section">
+        <div class="container">
+            <h2 class="section-title">최신 뉴스</h2>
+            <div class="news-preview-grid">
+                <div class="news-preview-item">
+                    <div class="news-preview-image">
+                        <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.ytimg.com%2Fvi%2FNsJeDgSnKU4%2Fmaxresdefault.jpg&type=sc960_832" alt="News 1">
+                    </div>
+                    <div class="news-preview-content">
+                        <span class="news-category">공지사항</span>
+                        <h3>엘리멘탈, 전 세계 흥행 돌풍!</h3>
+                        <p>픽사의 최신작이 전 세계적으로 큰 사랑을 받고 있습니다.</p>
+                        <a href="news.html" class="news-link">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="news-preview-item">
+                    <div class="news-preview-image">
+                        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F014%2F2023%2F08%2F03%2F0005051976_002_20230803143404001.jpg&type=sc960_832" alt="News 2">
+                    </div>
+                    <div class="news-preview-content">
+                        <span class="news-category">인터뷰</span>
+                        <h3>피터 손 감독과의 특별 인터뷰</h3>
+                        <p>엘리멘탈의 감독이 영화 제작 과정에 대해 이야기합니다.</p>
+                        <a href="news.html" class="news-link">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="news-more">
+                <a href="news.html" class="btn-secondary">MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PIXAR</h3>
+                    <p>창의성과 혁신의 세계로 여러분을 초대합니다.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>링크</h3>
+                    <ul>
+                        <li><a href="movie-details.html">영화 정보</a></li>
+                        <li><a href="characters.html">캐릭터 소개</a></li>
+                        <li><a href="gallery.html">갤러리</a></li>
+                        <li><a href="news.html">뉴스</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>연락처</h3>
+                    <p>Email: info@pixar.com</p>
+                    <p>Phone: +1-800-PIXAR</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PIXAR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
